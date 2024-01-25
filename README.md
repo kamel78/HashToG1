@@ -19,4 +19,4 @@ This is a personalized implementation of Koshelev's proposed indifferentiable ha
 ## Files
 
 - "Koshelev-hash.ipynb": Contains codes ready to run under Jupyter.
-- "KoshelevTests.py": Includes the benchmarking dataset taken from the original implementation.
+- "KoshelevTests.py": Includes the benchmarking set taken from the original implementation.

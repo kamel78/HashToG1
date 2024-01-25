@@ -1,16 +1,22 @@
 # HashToG1
-Personalized implementation of the  Koshelev's proposed indifferentiable hashing to elliptic curves
-https://eprint.iacr.org/2020/1070 
 
+This is a personalized implementation of Koshelev's proposed indifferentiable hashing to elliptic curves, as described in the paper available at [https://eprint.iacr.org/2020/1070](https://eprint.iacr.org/2020/1070).
 
-Demonstration for the BLS12-381 curve (case (q % 27) % 9 =10)
+## Demonstration for the BLS12-381 Curve
 
--   The proposed implementation is constant-time and about 20% faster thant the original one (if we ommit contant-time condition, it can be much faster).
--   Some precomputed constant are necessary (3 Lagrange coefficients !)
--   Functions phi, crtRatio and hprime are merged into one code
--   Benchmark is performed using generated data from the orginal implementation (included in "KoshilevTests.py")
+(case \( (q \mod 27) \mod 9 = 10 \)):
 
-Original implementations :
+- The proposed implementation is constant-time and approximately 20% faster than the original one (excluding the constant-time condition, it can be even faster).
+- Some precomputed constants are required (3 Lagrange coefficients).
+- The functions phi, crtRatio, and hprime are combined into a single code.
+- Benchmarking is conducted using generated data from the original implementation, which is included in "KoshilevTests.py".
 
-https://github.com/Dimitri-Koshelev/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation
-https://github.com/zhenfeizhang/indifferentiable-hashing?tab=readme-ov-file
+## Original Implementations
+
+- [Dimitri-Koshelev's Implementation](https://github.com/Dimitri-Koshelev/Indifferentiable-hashing-to-ordinary-elliptic-curves-of-j-0-with-the-cost-of-one-exponentiation)
+- [zhenfeizhang's Implementation](https://github.com/zhenfeizhang/indifferentiable-hashing?tab=readme-ov-file)
+
+## Files
+
+- "Koshelev-hash.ipynb": Contains codes ready to run under Jupyter.
+- "KoshelevTests.py": Includes the benchmarking dataset taken from the original implementation.

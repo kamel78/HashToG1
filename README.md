@@ -1,6 +1,8 @@
 # HashToG1
 
-This is a personalized implementation of Koshelev's proposed indifferentiable hashing to elliptic curves, as described in the paper available at [https://eprint.iacr.org/2020/1070](https://eprint.iacr.org/2020/1070).
+This is a personalized implementation of Koshelev's proposed indifferentiable hashing to elliptic curves, as described in the paper :
+Koshelev, D. (2022). Indifferentiable hashing to ordinary elliptic F q-curves of j= 0 with the cost of one exponentiation in F q. Designs, Codes and Cryptography, 90(3), 801-812.
+available at [https://link.springer.com/article/10.1007/s10623-022-01012-8].
 
 ## Demonstration for the BLS12-381 Curve
 
